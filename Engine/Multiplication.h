@@ -1,10 +1,10 @@
 #pragma once
 #include "AbstractOperation.h"
 
-class SubEngine: public AbstarctOperationEngine
+class MulEngine : public AbstarctOperationEngine
 {
 public:
-	SubEngine();
+	MulEngine();
 	
 	double Compute();
 };

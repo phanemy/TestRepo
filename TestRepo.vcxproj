@@ -127,11 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Engine\AbstractOperation.cpp" />
     <ClCompile Include="Engine\Addition.cpp" />
+    <ClCompile Include="Engine\Multiplication.cpp" />
+    <ClCompile Include="Engine\Soustraction.cpp" />
     <ClCompile Include="TestRepo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Engine\AbstractOperation.h" />
     <ClInclude Include="Engine\Addition.h" />
+    <ClInclude Include="Engine\Multiplication.h" />
+    <ClInclude Include="Engine\Soustraction.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

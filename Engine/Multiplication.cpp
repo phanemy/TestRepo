@@ -1,8 +1,8 @@
 #pragma once
-#include "Soustraction.h"
+#include "Multiplication.h"
 #include <iostream>
 
-SubEngine::SubEngine():AbstarctOperationEngine(){
+MulEngine::MulEngine():AbstarctOperationEngine(){
 }
 
-double SubEngine::Compute() {return m_numberA - m_numberB;}
+double MulEngine::Compute() {return m_numberA * m_numberB;}
