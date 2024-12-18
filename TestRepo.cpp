@@ -3,22 +3,43 @@
 
 #include <iostream>
 #include "Engine/Addition.h">
+#include "Engine/Soustraction.h">
 
 
 int main()
 {
-    std::cout << "Hello World!\n";
-     AddEngine engine;
+	std::cout << "which operation would you like to perform\n";
+	std::cout << "\t-Addition (a)\n";
+	std::cout << "\t-Substraction (s)\n";
 
-    engine.AskNumberA();
-    engine.AskNumberB();
+	char c;
 
-    double dAdd = engine.Compute();
+	std::cin >> c; // Get user input from the keyboard
 
-    std::cout << engine.NumberA() <<" + " << engine.NumberA() <<" = " << dAdd<<std::endl;
+	if (c == 'a') {
+
+		AddEngine engine;
+
+		engine.AskNumberA();
+		engine.AskNumberB();
+
+		double dAdd = engine.Compute();
+
+		std::cout << engine.NumberA() << " + " << engine.NumberA() << " = " << dAdd << std::endl;
+	}
+	else {
+		SubEngine engine;
+
+		engine.AskNumberA();
+		engine.AskNumberB();
+
+		double dAdd = engine.Compute();
+
+		std::cout << engine.NumberA() << " + " << engine.NumberA() << " = " << dAdd << std::endl;
+	}
 
 
-    system("pause");
+	system("pause");
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
