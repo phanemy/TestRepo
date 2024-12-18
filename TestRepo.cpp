@@ -15,7 +15,7 @@ int main()
 
     double dAdd = engine.Compute();
 
-    std::cout << engine.NumberA() <<" + " << engine.NumberA() <<" = " << dAdd<<std::endl;
+    std::cout << engine.NumberA() <<" + " << engine.NumberB() <<" = " << dAdd<<std::endl;
 
 
     system("pause");
