@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "Engine/Addition.h">
+#include "Engine/Multiplication.h">
 #include "Engine/Soustraction.h">
 
 
@@ -36,6 +37,16 @@ int main()
 		double dAdd = engine.Compute();
 
 		std::cout << engine.NumberA() << " - " << engine.NumberB() << " = " << dAdd << std::endl;
+	}
+	else if (c == 'm') {
+		MulEngine engine;
+
+		engine.AskNumberA();
+		engine.AskNumberB();
+
+		double dAdd = engine.Compute();
+
+		std::cout << engine.NumberA() << " * " << engine.NumberB() << " = " << dAdd << std::endl;
 	}
 	else {
 		std::cout << c << " : is not a valid entry"<< std::endl;
