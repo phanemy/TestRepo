@@ -16,6 +16,7 @@ int main()
 
 	std::cin >> c; // Get user input from the keyboard
 
+<<<<<<< HEAD
 	if (c == 'a') {
 
 		AddEngine engine;
@@ -37,6 +38,9 @@ int main()
 
 		std::cout << engine.NumberA() << " + " << engine.NumberA() << " = " << dAdd << std::endl;
 	}
+=======
+    std::cout << engine.NumberA() <<" + " << engine.NumberB() <<" = " << dAdd<<std::endl;
+>>>>>>> origin/1.0
 
 
 	system("pause");
