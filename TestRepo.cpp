@@ -27,7 +27,7 @@ int main()
 
 		std::cout << engine.NumberA() << " + " << engine.NumberB() << " = " << dAdd << std::endl;
 	}
-	else {
+	else if(c == 's') {
 		SubEngine engine;
 
 		engine.AskNumberA();
@@ -37,7 +37,9 @@ int main()
 
 		std::cout << engine.NumberA() << " - " << engine.NumberB() << " = " << dAdd << std::endl;
 	}
-
+	else {
+		std::cout << c << " : is not a valid entry"<< std::endl;
+	}
 
 	system("pause");
 }
