@@ -2,10 +2,22 @@
 //
 
 #include <iostream>
+#include "Engine/Addition.h">
+
 
 int main()
 {
     std::cout << "Hello World!\n";
+     AddEngine engine;
+
+    engine.AskNumberA();
+    engine.AskNumberB();
+
+    double dAdd = engine.Compute();
+
+    std::cout << engine.NumberA() <<" + " << engine.NumberA() <<" = " << dAdd<<std::endl;
+
+
     system("pause");
 }
 
